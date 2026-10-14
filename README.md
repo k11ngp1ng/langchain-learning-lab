@@ -1,22 +1,22 @@
-# Laboratório de LangChain
+# LangChain Lab
 
-Um laboratório prático para explorar fundamentos de aplicações com LLMs usando LangChain e Python — da primeira chamada até um chatbot com memória, ferramentas e execução local.
+A hands-on lab to explore the fundamentals of LLM applications using LangChain and Python—from your first API call to a chatbot with memory, tools, and local execution.
 
-## Objetivo
+## Objective
 
-Transformar conceitos de IA aplicada em experimentos pequenos, progressivos e fáceis de reproduzir.
+Turn applied AI concepts into small, progressive, and easy-to-reproduce experiments.
 
-## O que é explorado
+## What is Explored
 
-- Primeira integração com LangChain
-- Prompts e pipelines com LCEL
-- Saídas estruturadas
-- Memória de conversa
-- Execução de modelos locais com Ollama
-- Ferramentas e agentes
-- Chatbot de linha de comando
+- First integration with LangChain
+- Prompts and pipelines with LCEL
+- Structured outputs
+- Conversation memory
+- Local model execution with Ollama
+- Tools and agents
+- Command-line chatbot
 
-## Tecnologias
+## Technologies
 
 - Python
 - LangChain
@@ -24,52 +24,21 @@ Transformar conceitos de IA aplicada em experimentos pequenos, progressivos e f�
 - Ollama
 - python-dotenv
 
-## Estrutura do laboratório
+## Lab Structure
 
-| Arquivo | Tema |
+| File | Topic |
 | --- | --- |
-| `01_hello_langchain.py` | Primeira interação com LangChain |
-| `02_prompt_lcel.py` | Prompts e encadeamentos com LCEL |
-| `03_saida_estruturada.py` | Respostas estruturadas |
-| `04_memoria_conversa.py` | Memória em conversas |
-| `05_ollama_local.py` | Uso de modelo local com Ollama |
-| `06_tools_agente.py` | Ferramentas e agentes |
-| `07_chatbot_completo.py` | Chatbot integrando os conceitos |
+| `01_hello_langchain.py` | First interaction with LangChain |
+| `02_prompt_lcel.py` | Prompts and chains with LCEL |
+| `03_saida_estruturada.py` | Structured responses |
+| `04_memoria_conversa.py` | Conversation memory |
+| `05_ollama_local.py` | Using local models with Ollama |
+| `06_tools_agente.py` | Tools and agents |
+| `07_chatbot_completo.py` | Chatbot integrating all concepts |
 
-## Como executar
+## How to Run
 
-1. Clone o repositório e crie um ambiente virtual:
+1. Clone the repository and create a virtual environment:
 
    ```bash
    python -m venv .venv
-   ```
-
-2. Ative o ambiente e instale as dependências:
-
-   ```bash
-   pip install langchain langchain-groq langchain-ollama python-dotenv
-   ```
-
-3. Crie um arquivo `.env` na raiz do projeto:
-
-   ```env
-   GROQ_API_KEY=sua_chave_aqui
-   ```
-
-4. Execute um dos exemplos:
-
-   ```bash
-   python 01_hello_langchain.py
-   ```
-
-> Para o exemplo com Ollama, mantenha o Ollama em execução e configure um modelo local compatível no script. Nunca versione chaves de API.
-
-## Aprendizados
-
-- Construir protótipos de IA de forma incremental reduz a complexidade.
-- Separar configuração sensível em variáveis de ambiente evita expor credenciais.
-- LLMs ficam mais úteis quando combinados com memória, ferramentas e saídas estruturadas.
-
-## Próximos passos
-
-Consulte o [roadmap do laboratório](ROADMAP_LABORATORIO_U3.md) para acompanhar as próximas evoluções.
